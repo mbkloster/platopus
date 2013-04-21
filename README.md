@@ -24,3 +24,7 @@ However, just because some of these algorithms were interesting enough for me to
 As mentioned before, this script works pretty much straight out of the box by running platopus.py. You'll need to feed commands to by piping lines of commands in to cmd.txt, which will automatically pick them up and process them. You can get a list of commands from combing through Console.py.
 
 "Response scripts" (the kind that determine how the bot reacts to certain commands) are stored in the responses/ directory. When you make a change to one of them, say test.py, you don't need to reboot the bot to see that change take effect. Instead, just run the command "reloadresponse test". They way that commands are directed into responses is determined by ResponseIndex.py, which can also be reloaded mid-flight via the command "reloadresponseindex". You'll NEED to run these commands to see your changes take effect! Note that if a command has never been used by the bot, its accompanying response script will not be loaded into memory yet.
+
+## Additional Notes
+
+You may need to create an "accounts" dir at the root level of this project to support proper account creation/maintenance. It was not included by default as I didn't commit any accounts and you may not even want to use this functionality.
