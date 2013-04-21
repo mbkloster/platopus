@@ -1,0 +1,21 @@
+\ works as an escaping char... to include a backslash itself, use \\
+[] opens/closes a raw text feed
+{item1,item2} randomly selects between including "item1" and "item2" in the rsg - it will be parsed as such
+a includes stuff from category "a" in rsg. eg: "a large Butt"
+A includes it, uppercased. eg: "A LARGE BUTT"
+_a includes it, forced into lowercase. eg: "a large butt"
+^a includes it, uppercasing the first letter as well. eg: "A large Butt"
+^A includes it, uppercasing the first letter of every word as well. eg: "A Large Butt"
+
+h[n] recalls item number n -- in its raw, lowercase form. All rules from above apply to it. eg: H(2) recalls item 2 in uppercase.
+hvt[n] recalls verb number n in tense t. All rules from above apply to it. n should match the n used above.
+hn[s](n] recalls noun number n, possibly pluralizing it, if n is suffixed with s. All rules above apply. n should match the n used above.
+
+n[s] - includes a noun. add an s to it to pluralize it
+v[/ing/ed/en/s][1/2/3/4/5] - includes a verb, specific to a certain tense. Can use either -ing, etc. suffixes or numbers. depending on your preference.
+j - includes an adjective.
+d - includes an adverb.
+e - includes an exclamation.
+q - matches a quote.
+l[0/1/2/3] - matches a line. l itself matches a whole line, as does l0. l1 matches the beginning, l2 middle, l3 end. Matches from current channel or user.
+l[0/1/2/3](chan,string) - matches a line, specific to a certain user or channel. will match string wildcard as much as it can. failing this, falls back on any line from user/chan. failing that, falls back on current user/chan.

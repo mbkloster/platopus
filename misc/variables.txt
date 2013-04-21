@@ -1,0 +1,7 @@
+lg_last_pass 0
+lg_action2 "hurl"
+lg_action1 "fling"
+lg_last_game 1308388009.32
+rankick_chance 0
+lg_last_time 0
+sg_last_game 0

@@ -1,0 +1,3 @@
+loves {target} unquestioningly
+platonically loves {target}
+would love {target}, but only if sex were somehow involved

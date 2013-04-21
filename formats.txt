@@ -1,0 +1,17 @@
+[00:00:00] 
+
+[00:00:00] Joined channel #chan
+[00:00:00] Could not join #chan: Error
+
+[00:00:00] #chan Nick MSG: message text
+[00:00:00] #chan Nick DESC: jumps around
+[00:00:00] #chan Nick NOTICE: notice text
+[00:00:00] #chan Nick CTCP: VERSION
+[00:00:00] #chan Nick MODE: +blah
+
+[00:00:00] PRIV Nick MSG: message text
+...
+
+[00:00:00] #chan Nick JOIN
+[00:00:00] #chan Nick PART (message)
+[00:00:00] Nick QUIT (message)
